@@ -20,7 +20,7 @@ MODEL:
       SCALE: 1.0
 
     TRI:
-      MARGIN: 0.0
+      MARGIN: 0.3
       HARD_MINING: True
       NORM_FEAT: False
       SCALE: 1.0
