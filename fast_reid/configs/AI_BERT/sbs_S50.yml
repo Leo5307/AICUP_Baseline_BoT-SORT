@@ -1,0 +1,45 @@
+_BASE_: ../Base-SBS.yml
+
+INPUT:
+  SIZE_TRAIN: [256, 256]
+  SIZE_TEST: [256, 256]
+MODEL:
+  BACKBONE:
+    NAME: build_resnest_backbone
+    DEPTH: 101x
+    PRETRAIN_PATH: './pretrained/mot20_sbs_S50.pth'
+    WITH_IBN: True
+    PRETRAIN: True
+  HEADS:
+    POOL_LAYER: GeneralizedMeanPooling
+    # DROPOUT: 0.3
+
+  LOSSES:
+    TRI:
+      HARD_MINING: True
+      MARGIN: 0.2
+
+DATALOADER:
+  SAMPLER_TRAIN: NaiveIdentitySampler
+  NUM_INSTANCE: 4
+  NUM_WORKERS: 4
+
+DATASETS:
+  NAMES: ("AICUP",)
+  TESTS: ("AICUP",)
+
+SOLVER:
+  BIAS_LR_FACTOR: 1.
+  OPT: RAdam
+  IMS_PER_BATCH: 128
+  MAX_EPOCH: 80
+  STEPS: [30, 50]
+  WARMUP_ITERS: 2000
+
+  CHECKPOINT_PERIOD: 1
+
+TEST:
+  EVAL_PERIOD: 80 # We didn't provide eval dataset
+  IMS_PER_BATCH: 64
+
+OUTPUT_DIR: logs/AI_BERT/sbs_S50_2
