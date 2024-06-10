@@ -14,7 +14,8 @@
 2. 1
     - 這裡需要確保google drive中有訓練集、測試集、預訓練模型和為了復現結果所需要的我訓練好的模型
     - 大致上資料結構如下所示：
-    ![image](https://hackmd.io/_uploads/ryIVU9EBR.png)
+    ![image](https://github.com/Leo5307/AICUP_Baseline_BoT-SORT/assets/116941598/964c6851-0377-44c4-ad8c-4f4d09a461ea)
+
     - 訓練集（dataset.zip）可從[官網](https://tbrain.trendmicro.com.tw/Competitions/Details/33)下載（下載後重命名）
     - 測試集（32_33_AI_CUP_testdataset.zip）可從[官網](https://tbrain.trendmicro.com.tw/Competitions/Details/33)下載（下載後重命名）
     - 預訓練模型可參照baseline程式的方式在這裡下載[mot20_sbs_S50.pth](https://drive.google.com/file/d/1KqPQyj6MFyftliBHEIER7m_OrGpcrJwi/view?usp=sharing)
