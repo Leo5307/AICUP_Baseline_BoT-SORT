@@ -11,7 +11,7 @@
 1. 安裝Anaconda與環境設定
     - 按照Baseline的環境需求將環境裝好
     - 這裡只需按照順序執行即可
-2. 1
+2. 下載以及處理比賽資料集
     - 這裡需要確保google drive中有訓練集、測試集、預訓練模型和為了復現結果所需要的我訓練好的模型
     - 大致上資料結構如下所示：
     ![image](https://github.com/Leo5307/AICUP_Baseline_BoT-SORT/assets/116941598/964c6851-0377-44c4-ad8c-4f4d09a461ea)
