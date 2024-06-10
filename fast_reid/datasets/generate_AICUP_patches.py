@@ -27,7 +27,7 @@ def make_parser():
     parser.add_argument("--data_path", default="", help="path to AICUP train data")
     parser.add_argument("--save_path", default="fast_reid/datasets", help="Path to save the MOT-ReID dataset")
     parser.add_argument('--imgsz', type=tuple, default=(720, 1280), help='img size, (height, width)')
-    parser.add_argument('--train_ratio', type=float, default=0.95, help='The ratio of the train set when splitting the train set and the test set')
+    parser.add_argument('--train_ratio', type=float, default=0.8, help='The ratio of the train set when splitting the train set and the test set')
 
     return parser
 
@@ -44,7 +44,7 @@ def main(args):
     os.makedirs(test_save_path, exist_ok=True)
     
     # Split train/test set
-    total_files = sorted(glob.glob(os.path.join(args.data_path, 'samples', '*')))
+    total_files = sorted(glob.glob(os.path.join(args.data_path, 'images', '*')))
     total_count = len(total_files)
     train_count = int(total_count * args.train_ratio)
     train_files = total_files[:train_count]
