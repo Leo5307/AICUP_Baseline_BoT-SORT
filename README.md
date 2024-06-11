@@ -1,6 +1,6 @@
 ## 專案介紹
 1. 此專案為2024 AICUP——AI驅動出行未來：跨相機多目標車輛追蹤競賽（模型組）的參考專案
-2. 大部分實作過程參考自主辦方的Baseline（https://github.com/ricky-696/AICUP_Baseline_BoT-SORT）
+2. 大部分實作過程參考自主辦方的[Baseline](https://github.com/ricky-696/AICUP_Baseline_BoT-SORT)
 3. 如有不詳盡之處，敬請參照主辦方的github
 
 ## 硬體環境的兩種選擇：
