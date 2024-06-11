@@ -7,7 +7,7 @@
 1.Google Colab:（這篇Readme.md所使用的方式，可直接執行 AICUP_main.ipynb）
 - CPU: Intel(R) Xeon(R) CPU @ 2.20GHz
 - GPU: NVIDIA L4   
-- 預估訓練fast reid 模型所需時間：8小時
+- 預估訓練fast reid 模型所需時間：10小時
 - 預估訓練 yolov7 模型所需時間： 36小時
 - 預估推論訓練集所需時間：4小時
 - 預估推論測試集所需時間：4小時
