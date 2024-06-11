@@ -4,7 +4,7 @@
 3. 如有不詳盡之處，敬請參照主辦方的github
 
 ## 硬體環境的兩種選擇：
-1. Google Colab:（這篇Readme.md所使用的方式，可直接執行 AICUP_main.ipynb）
+1.Google Colab:（這篇Readme.md所使用的方式，可直接執行 AICUP_main.ipynb）
 - CPU: Intel(R) Xeon(R) CPU @ 2.20GHz
 - GPU: NVIDIA L4   
 - 預估訓練fast reid 模型所需時間：8小時
