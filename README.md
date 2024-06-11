@@ -55,5 +55,6 @@
 
 6. 推論測試集階段：
     - 同推論訓練集階段，但這裡的source-dir 指定的是測試集的路徑（../testdata/32_33_AI_CUP_testdataset/AI_CUP_testdata/images/）
+7. （補充說明）推論的結果都會在 /content/AICUP_Baseline_BoT-SORT/runs/detect_report 中
 
 
