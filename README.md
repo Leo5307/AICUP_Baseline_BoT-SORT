@@ -37,8 +37,8 @@
     - 預訓練模型可參照baseline程式的方式在這裡下載[mot20_sbs_S50.pth](https://drive.google.com/file/d/1KqPQyj6MFyftliBHEIER7m_OrGpcrJwi/view?usp=sharing)
     - 我訓練好的模型可在這裡下載：[leaderboard_model.zip](https://drive.google.com/file/d/1WO7YUq7r0f2Y3P_pfchfKEZz1ITajptc/view?usp=sharing)
     - 自此專案的準備工作就此結束,這階段按照順序執行即可
-        - ``` fast_reid/datasets/generate_AICUP_patches.py ``` 負責將訓練集轉換成訓練 fast_reid 模型所需的資料
-        - ``` yolov7/tools/AICUP_to_YOLOv7.py ``` 負責將訓練集轉換成訓練 YOLO 模型所需的資料
+        - ``` fast_reid/datasets/generate_AICUP_patches.py ``` 負責將訓練集轉換成訓練 fast_reid 模型所需的資料（儲存在/content/fast_reid/datasets/AICUP-ReID）
+        - ``` yolov7/tools/AICUP_to_YOLOv7.py ``` 負責將訓練集轉換成訓練 YOLO 模型所需的資料（儲存在/content/datasets/yolo）
 3. 訓練 fast_reid 模型：
     - 按照順序執行即可訓練 fast_reid 模型，其結果儲存在：/content/AICUP_Baseline_BoT-SORT/logs/AICUP/sbs_S50_2_report_v2 裡面會包含權重檔(model_final.pth)以及模型的設定檔案（config.yaml），會在之後推論時用到。
 
@@ -48,12 +48,12 @@
 5. 推論訓練集階段：
     - 利用寫好的``` track_all_timestamps_report.sh ```對模型進行推論
     - --weight 參數指的是 YOLO 的權重檔案 (best.pt)
-    - --source-dir 需要的是訓練集的路徑
+    - --source-dir 需要的是訓練集的路徑 (../datasets/train/images/)
     - --fast-reid-config 需要的是fast-reid 的模型設定檔（config.yaml）
     - --fast-reid-weights 需要的是fast-reid 的模型權重檔(model_final.pth)
     - 以上皆預設使用我訓練好的模型，如要使用上面訓練好的模型，需要自行更換路徑
 
 6. 推論測試集階段：
-    - 同推論訓練集階段，但這裡的source-dir 指定的是測試集
+    - 同推論訓練集階段，但這裡的source-dir 指定的是測試集的路徑（../testdata/32_33_AI_CUP_testdataset/AI_CUP_testdata/images/）
 
 
