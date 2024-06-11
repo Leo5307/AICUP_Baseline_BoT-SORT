@@ -21,7 +21,6 @@
 - 推論測試集所需時間：2小時
 
 ## 如何使用該專案：
-方法：
 ### 依照比賽規定以下以 google colab 的方式來介紹。
 1. 下載程式碼中的AICUP_main.ipynb 並到google colab 執行。
 ### 詳細介紹各模塊輸入輸出 & AICUP_main.ipynb 的具體實作：
